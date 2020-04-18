@@ -1,22 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Router, Route, IndexRoute, BrowserHistory} from 'react-router';
+
+import App from './App';
+import Home from './containers/Home';
+import Result from './containers/Result';
+import Survey from './containers/Survey';
+
 import './index.css';
-import App from './FirstPage';
-import Start from './start';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Start />
-  </React.StrictMode>,
-  document.getElementById('underroot')
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
+      <Route path="Survey" component={Survey}/>
+      <Route path="Result" component={Result}/>
+    </Route>
+  </Router>,
+  document.getElementById('root')
 );
 
 

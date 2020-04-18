@@ -15,6 +15,9 @@
 
 .App-header {
   background-color: #282c34;
+  background-image: url('images/ping2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +25,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.demo {
+  color: #ffffff;
+  text-shadow: 0 0 5px #000;
+}
+#texts {
+  background-color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#StartButton {
+  margin-top: 20%;
+  border-radius: 5px;
+  border: 2px solid skyblue;
+  background-color: rgba(255,255,255,0);
+  font-size: medium;
+  color: white;
+  padding: 5px;
+
 }

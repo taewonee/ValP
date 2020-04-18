@@ -1,16 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/Nav.js';
 
-function Start() {
+
+function App() {
   return (
-    <div className="start">
-      <start />
+    <div className="App">
+      background-image: url('/images/ping.png');
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1> Value+</h1>
+        <ul>
+          <li>성능 디자인 가격</li>
+          <li>당신이 원하는 바로 그 제품</li>
+          <li>전문가가 골라드립니다</li>
+        </ul>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -24,4 +27,4 @@ function Start() {
   );
 }
 
-export default Start;
+export default App;
