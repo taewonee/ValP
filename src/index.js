@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, IndexRoute, BrowserHistory} from 'react-router';
 
 import App from './App';
 import Home from './containers/Home';
@@ -10,15 +9,14 @@ import Survey from './containers/Survey';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+export {default as Home} from './containers/Home';
+export {default as Survey} from './containers/Survey';
+export {default as Result} from './containers/Result';
 
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="Survey" component={Survey}/>
-      <Route path="Result" component={Result}/>
-    </Route>
-  </Router>,
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

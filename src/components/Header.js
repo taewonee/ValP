@@ -6,20 +6,24 @@ const MenuItem = ({active, children, to}) => (
             {children}
     </div>
 )
-
+const logoclick = e => {
+    e.preventDefault();
+    window.location='';
+}
 const Header = () => {
-    return (
+    return (    
         <div>
-            <div className="logo">
-                velopert
-            </div>
-            <div className="menu">
-                <MenuItem>홈</MenuItem>
-                <MenuItem>소개</MenuItem>
-                <MenuItem>포스트</MenuItem>
+            <div className="logo" onclick = {logoclick}>
+                Value +
             </div>
         </div>
     );
 };
 
 export default Header;
+
+//            <div className="menu">
+//                <MenuItem>홈</MenuItem>
+//                <MenuItem>소개</MenuItem>
+//                <MenuItem>포스트</MenuItem>
+//            </div>
