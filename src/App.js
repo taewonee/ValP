@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Navigation from './components/Nav.js';
 import styled from 'styled-components';
 import logo from './images/ping1.jpg'
 import arrow from "./images/Arrow.png";
